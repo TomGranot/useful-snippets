@@ -2,4 +2,4 @@
 
 In no particular order, a bunch of useful stuff:
 
-* Base64-Encoded Image Flags (as JSON) - [link](base64CountriesFlagJson)
+* Base64-Encoded Flag Images (as JSON!) - [link](base64CountriesFlagJson)
