@@ -4,7 +4,7 @@ I took all 248 country flags (at the time of writing) in SVG and PNG format from
 
 This is good if you're trying to get country flag images uploaded to a Shopify theme using the [Shopify Asset API](https://help.shopify.com/en/api/reference/online-store/asset#update-2019-10), as part of building a Shopify app/theme.
 
-Note that [`generate.sh`](./generate.sh) will allow you to generate these yourself.
+If you'd like to re-generate the JSON yourself, use [`generate.sh`](./generate.sh).
 
 **Note:** This is MIT-licensed! Reproduce license everywhere.
 
