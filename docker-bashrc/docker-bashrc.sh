@@ -7,32 +7,30 @@ dgrep(){
 
 # bash into an existing container
 dbash() {
-    docker exec -ti $(docker ps -a | grep "$1" | cut -c1-12) /bin/bash
-}
-
-# Execute something in an existing container
-dex() {
-    docker exec -ti $(docker ps -a | grep "$1" | cut -c1-12)
+    docker exec -ti $(dgrep "$1") /bin/bash
 }
 
 # sh into an existing container
 dsh() {
-    docker exec -ti $(docker ps -a | grep "$1" | cut -c1-12) /bin/sh
+    docker exec -ti $(dgrep "$1") /bin/sh
+}
+
+# Execute something in an existing container
+dex() {
+    docker exec -ti $(dgrep "$1")
 }
 
 # Start an existing container
 dstart(){
-    docker start $(docker ps -a | grep "$1" | cut -c1-12)
+    docker start $(dgrep "$1")
 }
 
 # Stop an existing container
 dstop(){
-    docker stop $(docker ps -a | grep "$1" | cut -c1-10)
+    docker stop $(dgrep "$1")
 }
 
 # Get logs of an existing container
 dlog(){
-    docker logs $(docker ps -a | grep "$1" | cut -c1-10)
+    docker logs $(dgrep "$1")
 }
-
-
