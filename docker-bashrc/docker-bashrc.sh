@@ -17,7 +17,7 @@ dsh() {
 
 # Execute something in an existing container
 dex() {
-    docker exec -ti $(dgrep "$1")
+    docker exec -ti $(dgrep "$1") $2
 }
 
 # Start an existing container
