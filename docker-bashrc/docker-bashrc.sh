@@ -2,7 +2,7 @@
 
 # Get container id of exiting container
 dgrep(){
-    docker ps -a | grep "$1" | cut -c1-12
+    docker ps -a | grep "$1" | cut -c1-12 | head -n 1 
 }
 
 # bash into an existing container
